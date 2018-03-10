@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Scrollo</title>
+        <script src="libs/phaser.js"></script>
+        <script src="libs/Boot.js"></script>
+        <script src="libs/Preloader.js"></script>
+        <script src="libs/StartMenu.js"></script>
+        <script src="libs/Stage1.js"></script>
+        <style>
+            body{
+                padding:0;
+                margin:0;
+                background-color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="gamecontainer"></div>
+        <script type='text/javascript'>
+            window.onload=function(){
+                var game = new Phaser.Game(1280,960,Phaser.AUTO,'gamecontainer');
+                game.state.add('Boot', Scrollo.Boot);
+                game.state.add('StartMenu',Scrollo.StartMenu);
+                game.state.add('Preloader', Scrollo.Preloader);
+                game.state.add('Stage1', Scrollo.Stage1);
+                game.state.start('Boot');
+                
+                
+    
+        
+            }
+
+
+        </script>
+    </body>
+    
+</html>

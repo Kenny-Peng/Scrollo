@@ -1,0 +1,17 @@
+add weapons
+make a jumping purple
+-need to fix floor collisions
+
+
+moving platforms
+http://www.html5gamedevs.com/topic/8479-tilemap-arcade-moving-platforms/
+
+
+fix boss
+
+find a use for weapon 2
+
+
+
+must also do the boss health//weird**
+
